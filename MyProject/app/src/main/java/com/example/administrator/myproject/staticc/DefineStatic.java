@@ -4,7 +4,7 @@ package com.example.administrator.myproject.staticc;
  */
 public class DefineStatic {
     //public final  static  String loachost="http://115.28.72.15:8080/indexget.php";
-     public final static  String ip="http://10.146.114.89:8088";
+     public final static  String ip="http://192.168.1.102:8088";
      public  final  static  String LOGIN="login";
      public final  static  String RESIGSTER="resisger";
  /*  public final static  String  loachost="http://192.168.1.105:8088/indexget.php";

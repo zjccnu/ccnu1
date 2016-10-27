@@ -25,15 +25,15 @@ public class MainActivity extends AppCompatActivity {
     }
     private void initTabhost() {
         LayoutInflater inflater=LayoutInflater.from(this);
-        for (int i=0;i<5;i++){
-            TabHost.TabSpec tab=tabHost.newTabSpec("tab" + i);
-            View view=inflater.inflate(R.layout.item, null);
+        for (int i=0;i<5;i++) {
+            TabHost.TabSpec tab = tabHost.newTabSpec("tab" + i);
+            View view = inflater.inflate(R.layout.item, null);
             //需要通过view去拿到控件，否则会空指针异常
-            ImageView ivtitle= (ImageView)view.findViewById(R.id.image);
-            TextView textView= (TextView) view.findViewById(R.id.text);
+            ImageView ivtitle = (ImageView) view.findViewById(R.id.image);
+            TextView textView = (TextView) view.findViewById(R.id.text);
             ivtitle.setImageResource(Entity.vt[i]);
             textView.setText(Entity.titile[i]);
-            if(i==2){
+            if (i == 2) {
                 textView.setText("");
             }
             tab.setIndicator(view);
